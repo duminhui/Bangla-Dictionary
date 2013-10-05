@@ -1,4 +1,4 @@
-package buet.rafi.dictionary;
+package liangsheng.music.dictionary;
 
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -22,7 +22,7 @@ public class DatabaseInitializer extends SQLiteOpenHelper {
      * storage. The package of the application is part of the path of the
      * directory.
      */
-    private static String DB_DIR = "/data/data/buet.rafi.dictionary/databases/";
+    private static String DB_DIR = "/data/data/liangsheng.music.dictionary/databases/";
     private static String DB_NAME = "dictionary";
     private static String DB_PATH = DB_DIR + DB_NAME;
     private static String OLD_DB_PATH = DB_DIR + "old_" + DB_NAME;
@@ -89,8 +89,8 @@ public class DatabaseInitializer extends SQLiteOpenHelper {
             try {
                 FileHelper.copyFile(DB_PATH, OLD_DB_PATH);
                 copyDataBase();
-                SQLiteDatabase old_db = SQLiteDatabase.openDatabase(OLD_DB_PATH, null, SQLiteDatabase.OPEN_READWRITE);
-                SQLiteDatabase new_db = SQLiteDatabase.openDatabase(DB_PATH,null, SQLiteDatabase.OPEN_READWRITE);
+                //SQLiteDatabase old_db = SQLiteDatabase.openDatabase(OLD_DB_PATH, null, SQLiteDatabase.OPEN_READWRITE);
+                //SQLiteDatabase new_db = SQLiteDatabase.openDatabase(DB_PATH,null, SQLiteDatabase.OPEN_READWRITE);
                 /*
                  * Add code to load data into the new database from the old
                  * database and then delete the old database from internal

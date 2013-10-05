@@ -1,4 +1,4 @@
-package buet.rafi.dictionary;
+package liangsheng.music.dictionary;
 
 import java.util.List;
 

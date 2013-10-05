@@ -1,4 +1,4 @@
-package buet.rafi.dictionary;
+package liangsheng.music.dictionary;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -50,12 +50,12 @@ public class WordListAdapter extends BaseAdapter {
 			view = mLayoutInflater.inflate(R.layout.word, null);
 		}
 		TextView english = (TextView) view.findViewById(R.id.english);
-		TextView bangla = (TextView) view.findViewById(R.id.bangla);
+		TextView chinese = (TextView) view.findViewById(R.id.bangla);
 		final ImageButton bookmark = (ImageButton) view.findViewById(R.id.bookmark);
-		bangla.setTypeface(Typeface.createFromAsset(context.getAssets(), Dictionary.FONT));
+		chinese.setTypeface(Typeface.createFromAsset(context.getAssets(), Dictionary.FONT));
 		
 		english.setText(word.english);
-		bangla.setText(word.bangla);
+		chinese.setText(word.chinese);
 		
 		if(word.status != null && word.status.equals(DictionaryDB.BOOKMARKED)) 
 			bookmark.setImageResource(R.drawable.bookmarked);

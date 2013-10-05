@@ -1,4 +1,4 @@
-package buet.rafi.dictionary;
+package liangsheng.music.dictionary;
 
 import android.app.AlertDialog;
 import android.app.ListActivity;
@@ -104,7 +104,7 @@ public class Dictionary extends ListActivity {
 		final View addNew = factory.inflate(R.layout.add_new, null);
 
 		final EditText english = (EditText) addNew.findViewById(R.id.english_input);
-		final EditText bangla = (EditText) addNew.findViewById(R.id.Bangla_input);
+		final EditText bangla = (EditText) addNew.findViewById(R.id.chinese_input);
 		
 		bangla.setTypeface(Typeface.createFromAsset(getAssets(), Dictionary.FONT));
 

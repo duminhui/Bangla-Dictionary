@@ -1,5 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Ridmik Dictionary</string>
 
+    <string name="app_name">古典音乐表情记号</string>
+    <string name="app_version">V0.1</string>
+    <string name="email">联系我:duminghui@126.com(良生)</string>
+    <string name="weibo">@杜米线想个毛</string>
+    <string name="about">
+        	<b>本应用使用GNU GPLv2发布</b>
+        	\n\n
+        	作为一名钢琴爱好者，苦于没有一款便携的表情术语手册，因此希望能够在android机上拥有一款词典应用。
+			\n\n
+			众所周知，大部分表情术语采用意大利文。但对于门外汉来说，查询意大利文会付出不小的时间代价。因此，我从网上收集了7000多音乐表情术语，结合rafi-kamal的词典程序，制作了这个应用。
+			\n\n
+			当然，这个应用存在不少问题。首先，词条释义没有求证，仅供参考。其次，网上收集的词条拼写不全，导致很多单词出现问号的情况。再次，许多释义拥有同上的解释，在打乱顺序后，其释义不可知。为此，该应用需要进一步优化。如果你发现词条有误，或者希望新的词条能够公开，请及时联系我。
+			\n\n
+			<i>特别鸣谢：rafi-kamal</i>
+			\n\n
+			<i>代码托管：https://github.com/duminhui/Bangla-Dictionary</i>
+			\n
+			<i>图标来源：http://www.sccnn.com/shiliangtuku/wenhuayishu/shiliangyinlewudao/20130510-93472.html</i>
+			\n\n
+</string>
 </resources>

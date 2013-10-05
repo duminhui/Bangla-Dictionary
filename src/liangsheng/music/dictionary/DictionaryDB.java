@@ -1,4 +1,4 @@
-package buet.rafi.dictionary;
+package liangsheng.music.dictionary;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -11,7 +11,7 @@ public class DictionaryDB {
 	
 	public static final String ID = "_id";
 	public static final String ENGLISH = "en_word";
-	public static final String BANGLA = "bn_word";
+	public static final String CHINESE = "zh_word";
 	public static final String STATUS = "status";
 	public static final String USER = "user_created";
     public static final String TABLE_NAME = "words";
@@ -30,7 +30,7 @@ public class DictionaryDB {
 		SQLiteDatabase db = initializer.getWritableDatabase();
 		
 		String sql = "INSERT INTO " + TABLE_NAME + " (" + ENGLISH + 
-				", " + BANGLA + ", " + USER + ") VALUES ('" + englishWord +
+				", " + CHINESE + ", " + USER + ") VALUES ('" + englishWord +
 				"', '" + banglaWord + "', '" + USER_CREATED + "') ";
 		db.execSQL(sql);
 	}
@@ -53,9 +53,9 @@ public class DictionaryDB {
 	        while(cursor.moveToNext()) {
 	        	int id = cursor.getInt(0);
 	        	String english = cursor.getString(1);
-	        	String bangla = cursor.getString(2);
+	        	String chinese = cursor.getString(2);
 	        	String status = cursor.getString(3);
-				wordList.add(new Bean(id, english, bangla, status));
+				wordList.add(new Bean(id, english, chinese, status));
 			}
 	        
 	        return wordList;
@@ -80,9 +80,9 @@ public class DictionaryDB {
         while(cursor.moveToNext()) {
         	int id = cursor.getInt(0);
         	String english = cursor.getString(1);
-        	String bangla = cursor.getString(2);
+        	String chinese = cursor.getString(2);
         	String status = cursor.getString(3);
-			wordList.add(new Bean(id, english, bangla, status));
+			wordList.add(new Bean(id, english, chinese, status));
 		}
         
         cursor.close();

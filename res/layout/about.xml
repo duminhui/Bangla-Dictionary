@@ -8,15 +8,16 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
         android:layout_margin="30dp"
-        android:gravity="center" >
+        android:gravity="center"
+        android:orientation="horizontal" >
 
         <ImageView
             android:id="@+id/ridmikLogo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:contentDescription="App Logo"
             android:src="@drawable/ridmik_logo" />
 
         <LinearLayout
@@ -29,9 +30,9 @@
                 android:id="@+id/ridmikTitle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Ridmik Dictionary"
-                android:textColor="#834723"
                 android:gravity="center"
+                android:text="@string/app_name"
+                android:textColor="#834723"
                 android:textStyle="bold" />
 
             <TextView
@@ -39,55 +40,47 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="v2.3" />
+                android:text="@string/app_version" />
         </LinearLayout>
     </LinearLayout>
 
-    <buet.rafi.dictionary.ScrollingTextView
-        android:id="@+id/scrolling"
+    <ScrollView
+        android:id="@+id/scrollView1"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"
-        android:gravity="center_horizontal"
-        android:text="scrolling"
-        android:textStyle="bold" />
+        android:layout_weight="0.37"
+        android:fillViewport="false" >
 
-    <TextView
-        android:id="@+id/ridmikKeyboard"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:gravity="center"
-        android:clickable="true"
-        android:onClick="ridmikKeyboardClicked"
-        android:text="Ridmik Bangla Keyboard"
-        android:textColor="#C75769"
-        android:textSize="16sp"
-        android:textStyle="bold" />
+        <TextView
+            android:id="@+id/about"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/about" />
+    </ScrollView>
 
     <TextView
         android:id="@+id/email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:clickable="true"
-        android:onClick="emailClicked"
-        android:text="Email Us"
-        android:textColor="#C75769"
+        android:clickable="false"
         android:gravity="center"
+        android:longClickable="true"
+        android:text="@string/email"
+        android:textColor="#C75769"
         android:textSize="16sp"
         android:textStyle="bold" />
-
-    <TextView
-        android:id="@+id/comment"
+<TextView
+        android:id="@+id/weibo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:clickable="true"
-        android:onClick="commentClicked"
-        android:text="Find Us On Facebook"
-        android:textColor="#C75769"
+        android:clickable="false"
         android:gravity="center"
+        android:longClickable="true"
+        android:text="@string/weibo"
+        android:textColor="#C75769"
         android:textSize="16sp"
-        android:textStyle="bold"
-        android:layout_marginBottom="20dp" />
-
+        android:textStyle="bold" />
 </LinearLayout>

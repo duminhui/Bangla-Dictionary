@@ -1,3 +1,12 @@
+COPYING.txt for Musical Terminology Dictionary
+
+Musical Terminology Dictionary - An open source Musical Terminology to Chinese Dictionary
+Build from Ridmik Dictionary
+
+Minhui Du, Oct. 2013
+
+----------------------------------------
+
 COPYING.txt for Ridmik Dictionary
 
 Ridmik Dictionary - An open source english-bangla dictionary
